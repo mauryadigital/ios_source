@@ -35,8 +35,8 @@
    
     userNameField.delegate=self;
     passwordField.delegate=self;
-    userNameField.text=@"manager";
-    passwordField.text=@"password";
+    userNameField.text=@"";
+    passwordField.text=@"";
     self.navigationItem.title=@"Leave Management System";
     self.title=@"Leave Management System";
     spinner = [[UIActivityIndicatorView alloc]
