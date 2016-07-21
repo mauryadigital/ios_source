@@ -13,6 +13,7 @@
 
     NSMutableArray *leavesArray;
     NSMutableArray *leaveTypeArray;
+    
 }
 @property (nonatomic, strong)NSMutableDictionary *empDataDictionary;
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;

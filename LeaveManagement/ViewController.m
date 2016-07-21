@@ -24,60 +24,43 @@
 @synthesize accessToken;
 - (void)viewDidLoad {
     [super viewDidLoad];
-//self.view.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"blue1.png"]];
-
-    dash=[[DashboardViewController alloc]initWithNibName:@"DashboardViewController" bundle:nil];
+      dash=[[DashboardViewController alloc]initWithNibName:@"DashboardViewController" bundle:nil];
     viewFrame=[UIScreen mainScreen].bounds;
-    // Do any additional setup after loading the view from its nib.
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:YES];
-   
+    
     userNameField.delegate=self;
     passwordField.delegate=self;
-    userNameField.text=@"";
-    passwordField.text=@"";
+    userNameField.text=@"manager";
+    passwordField.text=@"password";
+    passwordField.secureTextEntry=YES;
+    //Setting screen
     self.navigationItem.title=@"Leave Management System";
     self.title=@"Leave Management System";
+     self.view.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
+    
+    //Loading spinner
     spinner = [[UIActivityIndicatorView alloc]
                                              initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     
     spinner.center = CGPointMake(self.view.frame.size.width / 2.0, self.view.frame.size.height / 2.0);
-     self.view.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
+   
 }
 
+//Getting response from the server
 -(void) requestFinished: (ASIHTTPRequest *) request {
     
-    
-    // [request responseString]; is how we capture textual output like HTML or JSON
-    // [request responseData]; is how we capture binary output like images
-    // Then to create an image from the response we might do something like
-    // UIImage *image = [[UIImage alloc] initWithData:[request responseData]];
-    
     if (request.tag==111) {
+        //Checking credentials
         NSString *theJSON = [request responseString];
         NSLog(@"THE JSON %@",theJSON);
-        // Now we have successfully captured the JSON ouptut of our request
-        //  [self.navigationController pushViewController:objHomeViewController animated:YES];
         SBJsonParser *parser = [[SBJsonParser alloc] init];
-        
         NSMutableDictionary *jsonDictionary = [parser objectWithString:theJSON error:nil];
-        
-        
-        
-        // NSMutableDictionary *divisionDictionary = [jsonDictionary valueForKey:@""];
         NSLog(@"accetoken dictionary %@",jsonDictionary);
-        
-        //NSMutableDictionary *dict=[[NSMutableDictionary alloc]init];
-        // NSMutableArray *tempArray=[[NSMutableArray alloc]init];
-        
-        
-        //for (int i=0; i<divisionDictionary.count; i++) {
         accessToken=[[NSString alloc]init];
-        //[accessToken stringByAppendingString:[[NSString stringWithFormat:@"%@",[jsonDictionary valueForKey:@"access_token"]] ]]
         accessToken=[NSString stringWithFormat:@"%@",[jsonDictionary valueForKey:@"access_token"]];
         NSString *errorMessage=[NSString stringWithFormat:@"%@",[jsonDictionary valueForKey:@"error_description"]];
-        //  [tempArray addObject:str];
         NSLog(@"ACCESS-TOKEN :%@",accessToken);
         appDelegate = (AppDelegate*) [UIApplication sharedApplication].delegate;
         appDelegate.accessTokenString=accessToken;
@@ -99,57 +82,49 @@
         }
         
         else {
-            
-            
+            //if authenticated
             NSString *urlString=[NSString stringWithFormat:@"http://173.15.43.75:418/lms/rest/role?access_token=%@",accessToken];
             NSLog(@"URL STRING %@",urlString);
             NSURL *url = [NSURL URLWithString:urlString];
             ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
             request.delegate = self;
             request.tag=222;
-            
-            // [request setPostValue:userNameField.text forKey:@"your_key"];
-            
             [request startAsynchronous];
             [self.view addSubview:spinner];
             [spinner startAnimating];
             
-
         }
-
+        
     }
     else{
-    
-    
-    
+        
+     //Getting user role
+        
         NSString *theJSON = [request responseString];
         NSLog(@"THE JSON %@",theJSON);
-        // Now we have successfully captured the JSON ouptut of our request
-        //  [self.navigationController pushViewController:objHomeViewController animated:YES];
-        SBJsonParser *parser = [[SBJsonParser alloc] init];
+              SBJsonParser *parser = [[SBJsonParser alloc] init];
         
         NSMutableDictionary *jsonDictionary = [parser objectWithString:theJSON error:nil];
         
         
         
-        // NSMutableDictionary *divisionDictionary = [jsonDictionary valueForKey:@""];
         NSLog(@"role dictionary %@",jsonDictionary);
-
+        
         NSString *str=[jsonDictionary valueForKey:@"role"];
         NSLog(@"ROLE %@",str);
         appDelegate = (AppDelegate*) [UIApplication sharedApplication].delegate;
-
+        
         if ([str isEqualToString:@"ROLE_CONSULTANT"]) {
             appDelegate.isManagerLogin=NO;
         }
         else{
-        
+            
             appDelegate.isManagerLogin=YES;
-
+            
         }
-       
+        
         [self.navigationController pushViewController:dash animated:YES];
-            }
+    }
     
     [spinner stopAnimating];
     [spinner removeFromSuperview];
@@ -157,93 +132,75 @@
     
 }
 - (void)textFieldDidBeginEditing:(UITextField *)textField{
-
+    
+    //user friendly for entry in textfields
     if([[UIDevice currentDevice]userInterfaceIdiom]==UIUserInterfaceIdiomPhone)
     {
         if ([[UIScreen mainScreen] bounds].size.height == 480)
         {
-         
-            
-                [UIView beginAnimations:nil context:NULL];
-                [UIView setAnimationDuration:0.25];
-                self.view.frame = CGRectMake(0,-60,320,480);
-                [UIView commitAnimations];
-                
-            
-            
+            //iPhone 4
+            [UIView beginAnimations:nil context:NULL];
+            [UIView setAnimationDuration:0.25];
+            self.view.frame = CGRectMake(0,-60,320,480);
+            [UIView commitAnimations];
         }
-        
         
         else if ([[UIScreen mainScreen] bounds].size.height == 568)
         {
-         
+            //iPhone 5
             [UIView beginAnimations:nil context:NULL];
             [UIView setAnimationDuration:0.25];
             self.view.frame = CGRectMake(0,-30,320,568);
             [UIView commitAnimations];
-  
+            
         }
-       
+        
     }
     
     else
     {
         //[ipad]
     }
+}
+- (IBAction)forgotPasswordButtonAction:(id)sender {
     
-
-
+    
+    
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     
-    
-    
     if([[UIDevice currentDevice]userInterfaceIdiom]==UIUserInterfaceIdiomPhone)
     {
         if ([[UIScreen mainScreen] bounds].size.height == 480)
         {
-            
-            
             [UIView beginAnimations:nil context:NULL];
             [UIView setAnimationDuration:0.25];
             self.view.frame = CGRectMake(0,60,320,480);
             [UIView commitAnimations];
             
-            
-            
         }
-        
         
         else if ([[UIScreen mainScreen] bounds].size.height == 568)
         {
-            
             [UIView beginAnimations:nil context:NULL];
             [UIView setAnimationDuration:0.25];
             self.view.frame = CGRectMake(0,60,320,568);
             [UIView commitAnimations];
-            
-   
         }
-        
     }
-    
     else
     {
         //[ipad]
     }
     
-
-    
-    
-    
     [textField resignFirstResponder];
     return YES;
 }
+
+//Login button action
 - (IBAction)loginButtonAction:(id)sender {
- 
-    
     [userNameField resignFirstResponder];
     [passwordField resignFirstResponder];
     NSString *urlString=[NSString stringWithFormat:@"http://173.15.43.75:418/lms/oauth/token?grant_type=password&client_id=lms-client-id&client_secret=rest&username=%@&password=%@",userNameField.text,passwordField.text];
@@ -252,41 +209,13 @@
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     request.delegate = self;
     request.tag=111;
-    
-    // [request setPostValue:userNameField.text forKey:@"your_key"];
-    
     [request startAsynchronous];
     [self.view addSubview:spinner];
     [spinner startAnimating];
-
-    
-    
-//    if(userNameField.text.length==0)
-//    {
-//       objHomeViewController.isManagerLogin  = YES;
-//    }
-//    else{
-//    
-//       objHomeViewController.isManagerLogin   = NO;
-//    
-//    }
-//    [self.navigationController pushViewController:objHomeViewController animated:YES];
-    
-}
+ }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

@@ -23,8 +23,8 @@
     self.view.frame=[UIScreen mainScreen].bounds;
 }
 -(void)viewWillAppear:(BOOL)animated{
-
-    availableLeavesTable.frame=CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y, self.view.frame.size.width, 210);
+CGRect tabFrame=[UIScreen mainScreen].bounds;
+    availableLeavesTable.frame=CGRectMake(tabFrame.origin.x, tabFrame.origin.y,tabFrame.size.width, 210);
     availableLeavesTable.backgroundColor=[UIColor clearColor];
     availableLeavesTable.contentInset = UIEdgeInsetsMake(-5, 0, -5, 0);
 
@@ -65,8 +65,9 @@
     NSLog(@"lbl :%@",NSStringFromCGRect(lbl.frame));
 
     
+    
     UITextView *myTextView=[[UITextView alloc]init];
-    myTextView.frame=CGRectMake(availableLeavesTable.frame.origin.x,availableLeavesTable.frame.size.height+30,self.view.frame.size.width, self.view.frame.size.height-(lbl.frame.origin.y+lbl.frame.size.height-30));
+    myTextView.frame=CGRectMake(availableLeavesTable.frame.origin.x,availableLeavesTable.frame.size.height+30,self.view.frame.size.width,tabFrame.size.height-(lbl.frame.size.height+lbl.frame.origin.y)-70);
     
     [myTextView setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:15.0]];
     

@@ -86,10 +86,12 @@
 -(void)viewWillAppear:(BOOL)animated{
     
     [super viewWillAppear:YES];
+    index=0;
     spinner = [[UIActivityIndicatorView alloc]
                initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     
-    spinner.center = CGPointMake(self.view.frame.size.width / 2.0, self.view.frame.size.height / 2.0);
+    spinner.center = CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds));
+
     
     tabFrame=[UIScreen mainScreen].bounds;
     
@@ -124,7 +126,7 @@
     leaveManagerView.hidden=YES;
     leaveManagerTable.tag=222;
     approvalTable.tag=111;
-    leaveManagerView.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
+ leaveManagerView.backgroundColor=[UIColor colorWithRed:0.0/255.0 green:189.0/255.0 blue:203.0/255.0 alpha:1.0];
     self.navigationController.navigationBarHidden=NO;
     self.navigationController.navigationItem.hidesBackButton=TRUE;
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -324,7 +326,16 @@
         NSLog(@"str %@",str);
         if([str isEqualToString:@"SUCCESS"]){
             
- [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handle_data) name:@"reload_data" object:nil];
+            // Begin update
+            
+            // Perform update
+            [nameArray removeObjectAtIndex:index.row];
+            [departmentArray removeObjectAtIndex:index.row];
+            [statusArray removeObjectAtIndex:index.row];
+            [approvalTable reloadData];
+            approvalTable.delegate=self;
+            approvalTable.dataSource=self;
+            // End update
             UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"" message:@"Status updated successfully" preferredStyle:UIAlertControllerStyleAlert];
                        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 
@@ -435,6 +446,8 @@
 
 }
 - (void)closeButtonAction:(id)sender{
+    
+    
     [self removemanagerView];
 
 
@@ -883,6 +896,9 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
    
+    index=indexPath;
+    
+    
     if(tableView.tag==111){
     
     NSMutableDictionary *dictionary=[[NSMutableDictionary alloc]init];
@@ -917,11 +933,7 @@
             NSString *resonString=[dictionary valueForKey:@"reason"];
             employeeLeaveGrantedID=[dictionary valueForKey:@"employeeLeaveGrantedID"];
             leaveStatus=[dictionary valueForKey:@"leaveStatus"];
-            
-            
             NSLog(@"resonString : %@",resonString);
-            
-            
             empDetailsArray=[[NSMutableArray alloc]initWithObjects:nameString,departmentString,typeString,noofDaysString,fromString,toString,resonString, nil];
         
             
@@ -935,9 +947,21 @@
     
     else{
         
-    
-
-    leaveManagerView.frame = CGRectMake(4, 490, tabFrame.size.width-8, 300);
+       leaveManagerView.backgroundColor=[UIColor colorWithRed:0.0/255.0 green:189.0/255.0 blue:203.0/255.0 alpha:1.0];
+        if([[UIDevice currentDevice]userInterfaceIdiom]==UIUserInterfaceIdiomPhone)
+        {
+            if ([[UIScreen mainScreen] bounds].size.height == 480 || [[UIScreen mainScreen] bounds].size.height == 568)
+            {
+    leaveManagerView.frame = CGRectMake(4, 490, tabFrame.size.width-8, empDetailsArray.count*60);
+            }
+            else if ([[UIScreen mainScreen] bounds].size.height >= 667)
+            {
+                leaveManagerView.frame = CGRectMake(20, 490, 335, empDetailsArray.count*60);
+                
+            }
+              closeButton.frame=CGRectMake(leaveManagerView.frame.size.width-40,5, 24, 24);
+            
+            }
     approvalTable.alpha=0.5;
     [UIView animateWithDuration:0.5
                           delay:0.1
@@ -952,32 +976,30 @@
                                  leaveManagerView.frame = CGRectMake(4, 80, tabFrame.size.width-8, empDetailsArray.count*60);
                                  leaveManagerTitleLabel.frame=CGRectMake(0, 0, tabFrame.size.width-8, 30);
                                  leaveManagerTable.frame=CGRectMake(4, 30,tabFrame.size.width-8, tabFrame.size.height-50);
+                            closeButton.frame=CGRectMake(leaveManagerTable.frame.size.width-40,5, 24, 24);
                              }
                              
                              else if ([[UIScreen mainScreen] bounds].size.height >= 667)
                              {
                                  leaveManagerView.frame = CGRectMake(20, 80, 335, empDetailsArray.count*60);
-                                 leaveManagerView.backgroundColor=[UIColor colorWithRed:0.0/255.0 green:189.0/255.0 blue:203.0/255.0 alpha:1.0];
+                                
                                     leaveManagerTitleLabel.frame=CGRectMake(0, 0, leaveManagerView.frame.size.width, 30);
-                                 closeButton.frame=CGRectMake(leaveManagerView.frame.size.width-40,5, 24, 24);
+                                 closeButton.frame=CGRectMake(leaveManagerTable.frame.size.width-40,5, 24, 24);
 
-                                 leaveManagerTable.backgroundColor=[UIColor clearColor];
                                  leaveManagerTable.frame=CGRectMake(0, 30,330, 400);
                                  
                                  
                              }
                              
                              
-                             
-                             
-                             
+                          
+
                          }
                          
                          
                         
                          leaveManagerView.backgroundColor=[UIColor colorWithRed:0.0/255.0 green:189.0/255.0 blue:203.0/255.0 alpha:1.0];
-                         leaveManagerTable.backgroundColor=[UIColor clearColor];
-
+                         leaveManagerTable.backgroundColor=[UIColor colorWithRed:0.0/255.0 green:189.0/255.0 blue:203.0/255.0 alpha:1.0];
                          leaveManagerView.hidden=NO;
 //leaveManagerView.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
                       leaveManagerTable.backgroundColor=[UIColor clearColor];}

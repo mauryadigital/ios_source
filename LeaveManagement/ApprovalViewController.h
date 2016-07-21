@@ -24,7 +24,7 @@
     UILabel *statusLabel;
     
     CGRect footerFrame;
-
+    NSIndexPath *index;
 
 //Manager
     

@@ -24,7 +24,7 @@
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eP8-g6-SeJ">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ovf-vk-pMl">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pic.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ovf-vk-pMl">
                             <rect key="frame" x="0.0" y="-1" width="125" height="136"/>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTJ-cP-uqa">
@@ -88,4 +88,7 @@
             <point key="canvasLocation" x="389.5" y="17.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="pic.jpg" width="102" height="104"/>
+    </resources>
 </document>

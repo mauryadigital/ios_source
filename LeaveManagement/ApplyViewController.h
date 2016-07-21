@@ -10,9 +10,8 @@
 #import <MessageUI/MessageUI.h>
 @interface ApplyViewController : UIViewController<UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate,UITextViewDelegate,UIPickerViewDataSource,UIPickerViewDelegate,UITextViewDelegate,MFMailComposeViewControllerDelegate>
 {
-
     NSInteger nSectionIndex;
- NSInteger nIndex;
+    NSInteger nIndex;
     CGRect applyLeaveTableframe;
     CGRect footerFrame;
     
@@ -21,7 +20,6 @@
     UIPickerView *myPickerView;
     NSMutableArray *pickerArray;
     NSMutableArray *reasonspickerArray;
-
     UIToolbar *toolBar;
     UIDatePicker *datePicker;
     UITextField *dateTextField;
@@ -34,12 +32,11 @@
     UITextField *appliedDateTextbox;
     UITextView *Reasontextbox;
     UIActivityIndicatorView *spinner;
-   NSString* empInformationId;
+    NSString* empInformationId;
     UITextField *commonReasonTextField;
-
     NSMutableDictionary *leavesDictionary;
     NSDate *fromDate;
-
+    
 }
 @property (strong, nonatomic) IBOutlet UITableView *applyLeaveTable;
 @property (strong, nonatomic) NSMutableArray *empDetailsArray;

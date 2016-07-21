@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ChangePasswordsViewController.h"
 @class EmpDetailsViewController;
 @interface DashboardViewController : UIViewController<UICollectionViewDelegate,UICollectionViewDataSource,UITextFieldDelegate,UIPickerViewDataSource,UIPickerViewDelegate>{
 
@@ -24,7 +25,9 @@
     NSMutableArray *imagesArray1;
     NSMutableArray *labelsArray1;
     NSString* empId;
-
+    UIButton *settingsBtn;
+    ChangePasswordsViewController *changePwd;
+UIView *settingsView;
 
 }
 @property (strong, nonatomic) IBOutlet UIView *popup;

@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
+@interface ChangePasswordsViewController : UIViewController<UITextFieldDelegate>
+{
+    UILabel *oldPasswordLbl;
+    
+    UILabel *newPasswordLbl;
+    UILabel *confirmPasswordLbl;
+    UIButton *submit;
+    UITextField *oldPasswordTxtFld;
+    UITextField *newPasswordTxtFld;
+    UITextField *confirmPasswordTxtFld;
+    UIButton *submitButton;
 
-@interface ChangePasswordsViewController : UIViewController
-
+    
+}
 @end

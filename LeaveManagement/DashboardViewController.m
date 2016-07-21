@@ -126,13 +126,14 @@
 //  self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn] ;
     
     
-    UIButton *logutbtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    UIImage *btnImg1 = [UIImage imageNamed:@"logout.jpeg"];
-    [logutbtn setImage:btnImg1 forState:UIControlStateNormal];
+   settingsBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIImage *btnImg1 = [UIImage imageNamed:@"setting.png"];
+    [settingsBtn setImage:btnImg1 forState:UIControlStateNormal];
     
-    logutbtn.frame = CGRectMake(0, 0, btnImg1.size.width, btnImg1.size.height);
-    [logutbtn addTarget:self action:@selector(logoutButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:logutbtn] ;
+    settingsBtn.frame = CGRectMake(0, 0, btnImg1.size.width, btnImg1.size.height);
+    [settingsBtn addTarget:self action:@selector(settingsButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:settingsBtn] ;
+    settingsBtn.selected=YES;
     popup.backgroundColor=[UIColor colorWithRed:0.0/255.0 green:189.0/255.0 blue:203.0/255.0 alpha:1.0];
     [_collectionView addSubview:popup];
 
@@ -356,7 +357,98 @@ numberOfRowsInComponent:(NSInteger)component
     
     [self.navigationController popViewControllerAnimated:YES];
 }
--(void)logoutButtonAction:(id)sender{
+-(void)settingsButtonAction:(id)sender{
+   
+    
+    if ([settingsBtn isSelected]) {
+
+    CGRect tabFrame=[UIScreen mainScreen].bounds;
+    
+    
+    settingsView=[[UIView alloc]initWithFrame:CGRectMake(tabFrame.size.width-140,0,140, 80)];
+    settingsView.backgroundColor=[UIColor colorWithRed:0.0/255.0 green:189.0/255.0 blue:203.0/255.0 alpha:1.0];
+
+    UIButton *changePwdButton=[UIButton buttonWithType:UIButtonTypeCustom];
+   //[changePwdButton setBackgroundImage:[UIImage imageNamed:@"smallButton.jpeg"] forState:UIControlStateNormal];
+    [changePwdButton setTitle:@"ChangePassword" forState:UIControlStateNormal];
+        changePwdButton.titleLabel.font=[UIFont fontWithName:@"HelveticaNeue-Bold" size:13.0];
+        changePwdButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+        changePwdButton.contentEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
+
+        [changePwdButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+   // [changePwdButton setBackgroundColor:[UIColor redColor]];
+    [changePwdButton addTarget:self action:@selector(changePasswordButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    changePwdButton.frame=CGRectMake(5,10,120,30);
+    [changePwdButton setUserInteractionEnabled:YES];
+    UIButton *logoutButton=[UIButton buttonWithType:UIButtonTypeCustom];
+    
+   //[logoutButton setBackgroundImage:[UIImage imageNamed:@"smallButton.jpeg"] forState:UIControlStateNormal];
+    [logoutButton setTitle:@"Logout" forState:UIControlStateNormal];
+        [logoutButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+
+        logoutButton.titleLabel.font=[UIFont fontWithName:@"HelveticaNeue-Bold" size:13.0];
+        logoutButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+        logoutButton.contentEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
+
+    //[logoutButton setBackgroundColor:[UIColor redColor]];
+    [logoutButton addTarget:self action:@selector(logoutButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    logoutButton.frame=CGRectMake(5,40,120,30);
+    [logoutButton setUserInteractionEnabled:YES];
+    [settingsView addSubview:changePwdButton];
+    [settingsView addSubview:logoutButton];
+        [UIView animateWithDuration:0.5
+                              delay:0.1
+                            options: UIViewAnimationOptionTransitionFlipFromTop
+                         animations:^{
+                             [self.view addSubview:settingsView];
+                             
+                         }
+                         completion:^(BOOL finished){
+                         }];
+        
+
+        [settingsBtn setSelected: NO];
+
+    }
+    else{
+       
+        [self closeSettings];
+
+        
+        
+
+    }
+}
+-(void)closeSettings{
+
+    [UIView animateWithDuration:0.5
+                          delay:0.1
+                        options: UIViewAnimationOptionTransitionCurlUp
+                     animations:^{
+                         settingsView.frame=CGRectMake(0, 0, 0, 0);
+                         settingsView.hidden=YES;
+
+                     }
+                     completion:^(BOOL finished){
+                     }];
+    
+
+    [settingsBtn setSelected: YES];
+
+
+
+}
+- (void)changePasswordButtonAction:(id)sender {
+    
+    changePwd=[[ChangePasswordsViewController alloc]initWithNibName:@"ChangePasswordsViewController" bundle:nil];
+    
+    [self.navigationController pushViewController:changePwd animated:YES];
+}
+
+-(void)logoutButtonAction:(id)sender
+{
+    
+    
     
     AppDelegate* appDelegate = (AppDelegate*) [UIApplication sharedApplication].delegate;
     

@@ -16,6 +16,7 @@
     UIActivityIndicatorView* spinner;
     NSMutableDictionary *empdict;
     NSArray *results;
+    NSMutableArray *monthsArray;
 }
 @property (nonatomic,strong)IBOutlet UITableView *empListTable;
 

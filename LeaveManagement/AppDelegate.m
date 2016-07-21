@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -26,6 +26,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    [self.window.layer setShouldRasterize:YES];
+    [self.window.layer setRasterizationScale:[UIScreen mainScreen].scale];
 //    UIImageView *imgview=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"background.png"]];
 //    imgview.frame=self.window.frame;
 //    [self.window setBackgroundColor:[UIColor colorWithPatternImage:imgview.image]];

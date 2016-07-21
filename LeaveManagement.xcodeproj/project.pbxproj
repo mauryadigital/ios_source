@@ -20,17 +20,12 @@
 		CE36D4ED1D0A86CC00AA1F88 /* ApprovalTableviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE36D4EB1D0A86CC00AA1F88 /* ApprovalTableviewCell.xib */; };
 		CE4EC4721CEB72BD0008D731 /* ApplicationStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4EC4701CEB72BD0008D731 /* ApplicationStatusViewController.m */; };
 		CE4EC4731CEB72BD0008D731 /* ApplicationStatusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4EC4711CEB72BD0008D731 /* ApplicationStatusViewController.xib */; };
-		CE65CB651D084827008E26AB /* banner2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE65CB611D084827008E26AB /* banner2.jpg */; };
-		CE65CB661D084827008E26AB /* banner3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE65CB621D084827008E26AB /* banner3.jpeg */; };
-		CE65CB671D084827008E26AB /* banner1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE65CB631D084827008E26AB /* banner1.jpg */; };
-		CE65CB681D084827008E26AB /* banner4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE65CB641D084827008E26AB /* banner4.jpg */; };
-		CE65CB6A1D0853CA008E26AB /* launch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE65CB691D0853CA008E26AB /* launch.jpg */; };
-		CE65CB6C1D086E50008E26AB /* holi.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE65CB6B1D086E4F008E26AB /* holi.jpeg */; };
 		CE676B741CE4CA5C00D7B516 /* arrow-left_red.png in Resources */ = {isa = PBXBuildFile; fileRef = CE676B731CE4CA5C00D7B516 /* arrow-left_red.png */; };
+		CE6917631D3E75C2000D9103 /* ChangePasswordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6917611D3E75C2000D9103 /* ChangePasswordsViewController.m */; };
+		CE6917641D3E75C2000D9103 /* ChangePasswordsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6917621D3E75C2000D9103 /* ChangePasswordsViewController.xib */; };
 		CE698CA81CEF1F5C00E91BE7 /* ApprovalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE698CA61CEF1F5C00E91BE7 /* ApprovalViewController.m */; };
 		CE698CA91CEF1F5C00E91BE7 /* ApprovalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE698CA71CEF1F5C00E91BE7 /* ApprovalViewController.xib */; };
 		CE6CFC851D181692009C8538 /* pts_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CE6CFC841D181692009C8538 /* pts_logo.png */; };
-		CE6CFC871D182081009C8538 /* year.png in Resources */ = {isa = PBXBuildFile; fileRef = CE6CFC861D182081009C8538 /* year.png */; };
 		CE6CFC8B1D1821A1009C8538 /* YearHolidaysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6CFC891D1821A1009C8538 /* YearHolidaysViewController.m */; };
 		CE6CFC8C1D1821A1009C8538 /* YearHolidaysViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6CFC8A1D1821A1009C8538 /* YearHolidaysViewController.xib */; };
 		CE6CFC901D18277B009C8538 /* HolidaysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6CFC8F1D18277B009C8538 /* HolidaysViewController.m */; };
@@ -42,28 +37,10 @@
 		CE6E49231CF706620062D73B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6E49221CF706620062D73B /* Foundation.framework */; };
 		CE6E49251CF7066C0062D73B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6E49241CF7066C0062D73B /* UIKit.framework */; };
 		CE6E49271CF7076A0062D73B /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6E49261CF7076A0062D73B /* libz.1.dylib */; };
-		CE705E3B1CFDBFB4003243C0 /* newyear.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE705E3A1CFDBFB4003243C0 /* newyear.jpg */; };
-		CE705E3D1CFDBFC3003243C0 /* mlk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE705E3C1CFDBFC3003243C0 /* mlk.jpg */; };
-		CE705E3F1CFDBFCC003243C0 /* valentines.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE705E3E1CFDBFCC003243C0 /* valentines.jpeg */; };
-		CE705E411CFDBFE9003243C0 /* presidents_day.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE705E401CFDBFE9003243C0 /* presidents_day.jpg */; };
-		CE705E431CFDC089003243C0 /* goodfriday.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE705E421CFDC089003243C0 /* goodfriday.jpeg */; };
-		CE705E451CFDC0C6003243C0 /* eastersunday.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE705E441CFDC0C6003243C0 /* eastersunday.jpeg */; };
-		CE705E471CFDC0D0003243C0 /* mothersday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE705E461CFDC0D0003243C0 /* mothersday.jpg */; };
-		CE705E491CFDC0DD003243C0 /* memorialday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE705E481CFDC0DD003243C0 /* memorialday.jpg */; };
-		CE705E4B1CFDC0EC003243C0 /* fathersday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE705E4A1CFDC0EC003243C0 /* fathersday.jpg */; };
-		CE705E4D1CFDC0F7003243C0 /* independenceday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE705E4C1CFDC0F7003243C0 /* independenceday.jpg */; };
-		CE705E4F1CFDC10C003243C0 /* columbusday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE705E4E1CFDC10C003243C0 /* columbusday.jpg */; };
-		CE705E511CFDC120003243C0 /* laborday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE705E501CFDC120003243C0 /* laborday.jpg */; };
-		CE705E531CFDC175003243C0 /* thanksgiving.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE705E521CFDC175003243C0 /* thanksgiving.jpg */; };
-		CE705E551CFDC1A5003243C0 /* dayafter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE705E541CFDC1A5003243C0 /* dayafter.jpg */; };
-		CE705E571CFDC1BB003243C0 /* christmas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE705E561CFDC1BB003243C0 /* christmas.jpg */; };
 		CE705E5B1CFDCA4E003243C0 /* HolidayCustomCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE705E591CFDCA4E003243C0 /* HolidayCustomCellTableViewCell.m */; };
 		CE705E5C1CFDCA4E003243C0 /* HolidayCustomCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE705E5A1CFDCA4E003243C0 /* HolidayCustomCellTableViewCell.xib */; };
-		CE7230651D26733500048571 /* HR.png in Resources */ = {isa = PBXBuildFile; fileRef = CE7230641D26733500048571 /* HR.png */; };
 		CE7230671D267E8B00048571 /* HRPlc.png in Resources */ = {isa = PBXBuildFile; fileRef = CE7230661D267E8B00048571 /* HRPlc.png */; };
-		CE7230691D26837900048571 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = CE7230681D26837900048571 /* line.png */; };
-		CE72306B1D26845000048571 /* line1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE72306A1D26845000048571 /* line1.png */; };
-		CE7313EA1D1BEACD00C7116E /* HRPolicies.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE7313E91D1BEACD00C7116E /* HRPolicies.jpg */; };
+		CE7309141D40A58E001CC5D7 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = CE7309131D40A58E001CC5D7 /* setting.png */; };
 		CE7313F01D1BF56A00C7116E /* ViewController_4s.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7313EF1D1BF56A00C7116E /* ViewController_4s.xib */; };
 		CE7313F21D1BF65600C7116E /* ViewController_5s.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7313F11D1BF65600C7116E /* ViewController_5s.xib */; };
 		CE74D1591D13E56400E0485D /* empApply.png in Resources */ = {isa = PBXBuildFile; fileRef = CE74D1581D13E56400E0485D /* empApply.png */; };
@@ -76,30 +53,13 @@
 		CE74D1671D141E6300E0485D /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = CE74D1661D141E6300E0485D /* lock.png */; };
 		CE74D1691D141E6900E0485D /* user1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE74D1681D141E6900E0485D /* user1.png */; };
 		CE74D16B1D141F3300E0485D /* user2.png in Resources */ = {isa = PBXBuildFile; fileRef = CE74D16A1D141F3300E0485D /* user2.png */; };
-		CE74D16D1D14217A00E0485D /* emp1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE74D16C1D14217A00E0485D /* emp1.png */; };
 		CE762FAF1D2138F000E99B00 /* ApprovedCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE762FAD1D2138F000E99B00 /* ApprovedCellTableViewCell.m */; };
 		CE762FB01D2138F000E99B00 /* ApprovedCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE762FAE1D2138F000E99B00 /* ApprovedCellTableViewCell.xib */; };
 		CE7C09681D13D158006228ED /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = CE7C09671D13D158006228ED /* background.png */; };
-		CE7C096A1D13D8C6006228ED /* availableLeaves2.png in Resources */ = {isa = PBXBuildFile; fileRef = CE7C09691D13D8C6006228ED /* availableLeaves2.png */; };
-		CE7C1E2C1D01A6AA0083A3E2 /* NMBottomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7C1E291D01A6AA0083A3E2 /* NMBottomTabBar.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		CE7C1E2D1D01A6AA0083A3E2 /* NMBottomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7C1E2B1D01A6AA0083A3E2 /* NMBottomTabBarController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CE7E64391D1A74A100BD8BBB /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = CE7E64381D1A74A100BD8BBB /* close.png */; };
 		CE8E38E41D25726D00467E89 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8E38E31D25726C00467E89 /* MessageUI.framework */; };
 		CE99CC101CF853340058CB24 /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE99CC0E1CF853340058CB24 /* DashboardViewController.m */; };
 		CE99CC111CF853340058CB24 /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE99CC0F1CF853340058CB24 /* DashboardViewController.xib */; };
-		CE99CC131CF85D770058CB24 /* LeavesHistory.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE99CC121CF85D770058CB24 /* LeavesHistory.jpeg */; };
-		CE99CC151CF85D8D0058CB24 /* request.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE99CC141CF85D8D0058CB24 /* request.jpeg */; };
-		CE99CC171CF85E010058CB24 /* request1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE99CC161CF85E010058CB24 /* request1.jpeg */; };
-		CE99CC191CF85E2C0058CB24 /* Apply.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE99CC181CF85E2C0058CB24 /* Apply.jpeg */; };
-		CE99CC1B1CF85E330058CB24 /* AvailableLeaves.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE99CC1A1CF85E330058CB24 /* AvailableLeaves.jpeg */; };
-		CE99CC1D1CF85EE00058CB24 /* holiday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE99CC1C1CF85EE00058CB24 /* holiday.jpg */; };
-		CE99CC1F1CF862490058CB24 /* Holiday.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE99CC1E1CF862490058CB24 /* Holiday.jpeg */; };
-		CE9D6F681D09872A00604B47 /* AvailableLeaves1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9D6F671D09872A00604B47 /* AvailableLeaves1.png */; };
-		CE9D6F6B1D09884C00604B47 /* holi.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9D6F691D09884C00604B47 /* holi.png */; };
-		CE9D6F6C1D09884C00604B47 /* Holiday.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9D6F6A1D09884C00604B47 /* Holiday.png */; };
-		CE9D6F6E1D09891000604B47 /* Apply.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9D6F6D1D09891000604B47 /* Apply.png */; };
-		CE9D6F701D09898B00604B47 /* LeavesHistory.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9D6F6F1D09898B00604B47 /* LeavesHistory.png */; };
-		CE9D6F721D0989FC00604B47 /* request1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9D6F711D0989FC00604B47 /* request1.png */; };
 		CEA20D3B1CE47D7F002B3656 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA20D3A1CE47D7F002B3656 /* main.m */; };
 		CEA20D3E1CE47D7F002B3656 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA20D3D1CE47D7F002B3656 /* AppDelegate.m */; };
 		CEA20D461CE47D7F002B3656 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA20D451CE47D7F002B3656 /* Assets.xcassets */; };
@@ -108,16 +68,10 @@
 		CEA20D5F1CE47D7F002B3656 /* LeaveManagementUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA20D5E1CE47D7F002B3656 /* LeaveManagementUITests.m */; };
 		CEA20D6F1CE47E31002B3656 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA20D6D1CE47E31002B3656 /* ViewController.m */; };
 		CEA20D701CE47E31002B3656 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA20D6E1CE47E31002B3656 /* ViewController.xib */; };
-		CEA5F67E1CEDD31E00048553 /* blue1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CEA5F67D1CEDD31E00048553 /* blue1.jpeg */; };
-		CEA5F6801CEDDB6C00048553 /* blue2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CEA5F67F1CEDDB6C00048553 /* blue2.jpeg */; };
 		CEA5F6821CEDDC9500048553 /* login2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CEA5F6811CEDDC9500048553 /* login2.jpeg */; };
 		CEA5F6841CEDDDE900048553 /* smallButton.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CEA5F6831CEDDDE900048553 /* smallButton.jpeg */; };
 		CEA5F6861CEDDE5500048553 /* logout.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CEA5F6851CEDDE5500048553 /* logout.jpeg */; };
 		CEA5F6881CEDDEFF00048553 /* dropdown.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CEA5F6871CEDDEFF00048553 /* dropdown.jpeg */; };
-		CEA5F68F1CEDDFA500048553 /* ugadhi.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CEA5F68E1CEDDFA500048553 /* ugadhi.jpeg */; };
-		CEA5F6911CEDDFBB00048553 /* ramz.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CEA5F6901CEDDFBB00048553 /* ramz.jpeg */; };
-		CEA5F6931CEDDFCE00048553 /* christ.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CEA5F6921CEDDFCE00048553 /* christ.jpeg */; };
-		CEA5F6951CEDE0FD00048553 /* ugadhi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEA5F6941CEDE0FD00048553 /* ugadhi.jpg */; };
 		CEA6D5141D2A909B005628DF /* AvailableLeavesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA6D5121D2A909B005628DF /* AvailableLeavesViewController.m */; };
 		CEA6D5151D2A909B005628DF /* AvailableLeavesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA6D5131D2A909B005628DF /* AvailableLeavesViewController.xib */; };
 		CEA90BCC1CE9AE4000AECA1A /* ApplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA90BCA1CE9AE4000AECA1A /* ApplyViewController.m */; };
@@ -154,7 +108,6 @@
 		CEF646081D1AC0F100E4BF90 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF645F31D1AC0F100E4BF90 /* SBJsonWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CEF646651D1ACF8C00E4BF90 /* HRPoliciesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF646631D1ACF8C00E4BF90 /* HRPoliciesViewController.m */; };
 		CEF646661D1ACF8C00E4BF90 /* HRPoliciesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF646641D1ACF8C00E4BF90 /* HRPoliciesViewController.xib */; };
-		CEF6466A1D1ACFEA00E4BF90 /* policies.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CEF646691D1ACFEA00E4BF90 /* policies.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -193,18 +146,14 @@
 		CE4EC46F1CEB72BD0008D731 /* ApplicationStatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationStatusViewController.h; sourceTree = "<group>"; };
 		CE4EC4701CEB72BD0008D731 /* ApplicationStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationStatusViewController.m; sourceTree = "<group>"; };
 		CE4EC4711CEB72BD0008D731 /* ApplicationStatusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApplicationStatusViewController.xib; sourceTree = "<group>"; };
-		CE65CB611D084827008E26AB /* banner2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = banner2.jpg; sourceTree = "<group>"; };
-		CE65CB621D084827008E26AB /* banner3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = banner3.jpeg; sourceTree = "<group>"; };
-		CE65CB631D084827008E26AB /* banner1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = banner1.jpg; sourceTree = "<group>"; };
-		CE65CB641D084827008E26AB /* banner4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = banner4.jpg; sourceTree = "<group>"; };
-		CE65CB691D0853CA008E26AB /* launch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch.jpg; sourceTree = "<group>"; };
-		CE65CB6B1D086E4F008E26AB /* holi.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = holi.jpeg; sourceTree = "<group>"; };
 		CE676B731CE4CA5C00D7B516 /* arrow-left_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-left_red.png"; sourceTree = "<group>"; };
+		CE6917601D3E75C2000D9103 /* ChangePasswordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasswordsViewController.h; sourceTree = "<group>"; };
+		CE6917611D3E75C2000D9103 /* ChangePasswordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordsViewController.m; sourceTree = "<group>"; };
+		CE6917621D3E75C2000D9103 /* ChangePasswordsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangePasswordsViewController.xib; sourceTree = "<group>"; };
 		CE698CA51CEF1F5C00E91BE7 /* ApprovalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApprovalViewController.h; sourceTree = "<group>"; };
 		CE698CA61CEF1F5C00E91BE7 /* ApprovalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApprovalViewController.m; sourceTree = "<group>"; };
 		CE698CA71CEF1F5C00E91BE7 /* ApprovalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApprovalViewController.xib; sourceTree = "<group>"; };
 		CE6CFC841D181692009C8538 /* pts_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pts_logo.png; sourceTree = "<group>"; };
-		CE6CFC861D182081009C8538 /* year.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = year.png; sourceTree = "<group>"; };
 		CE6CFC881D1821A1009C8538 /* YearHolidaysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YearHolidaysViewController.h; sourceTree = "<group>"; };
 		CE6CFC891D1821A1009C8538 /* YearHolidaysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YearHolidaysViewController.m; sourceTree = "<group>"; };
 		CE6CFC8A1D1821A1009C8538 /* YearHolidaysViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YearHolidaysViewController.xib; sourceTree = "<group>"; };
@@ -218,29 +167,11 @@
 		CE6E49221CF706620062D73B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CE6E49241CF7066C0062D73B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CE6E49261CF7076A0062D73B /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
-		CE705E3A1CFDBFB4003243C0 /* newyear.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = newyear.jpg; sourceTree = "<group>"; };
-		CE705E3C1CFDBFC3003243C0 /* mlk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mlk.jpg; sourceTree = "<group>"; };
-		CE705E3E1CFDBFCC003243C0 /* valentines.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = valentines.jpeg; sourceTree = "<group>"; };
-		CE705E401CFDBFE9003243C0 /* presidents_day.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = presidents_day.jpg; sourceTree = "<group>"; };
-		CE705E421CFDC089003243C0 /* goodfriday.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = goodfriday.jpeg; sourceTree = "<group>"; };
-		CE705E441CFDC0C6003243C0 /* eastersunday.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eastersunday.jpeg; sourceTree = "<group>"; };
-		CE705E461CFDC0D0003243C0 /* mothersday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mothersday.jpg; sourceTree = "<group>"; };
-		CE705E481CFDC0DD003243C0 /* memorialday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = memorialday.jpg; sourceTree = "<group>"; };
-		CE705E4A1CFDC0EC003243C0 /* fathersday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fathersday.jpg; sourceTree = "<group>"; };
-		CE705E4C1CFDC0F7003243C0 /* independenceday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = independenceday.jpg; sourceTree = "<group>"; };
-		CE705E4E1CFDC10C003243C0 /* columbusday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = columbusday.jpg; sourceTree = "<group>"; };
-		CE705E501CFDC120003243C0 /* laborday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = laborday.jpg; sourceTree = "<group>"; };
-		CE705E521CFDC175003243C0 /* thanksgiving.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thanksgiving.jpg; sourceTree = "<group>"; };
-		CE705E541CFDC1A5003243C0 /* dayafter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dayafter.jpg; sourceTree = "<group>"; };
-		CE705E561CFDC1BB003243C0 /* christmas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = christmas.jpg; sourceTree = "<group>"; };
 		CE705E581CFDCA4E003243C0 /* HolidayCustomCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HolidayCustomCellTableViewCell.h; sourceTree = "<group>"; };
 		CE705E591CFDCA4E003243C0 /* HolidayCustomCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HolidayCustomCellTableViewCell.m; sourceTree = "<group>"; };
 		CE705E5A1CFDCA4E003243C0 /* HolidayCustomCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HolidayCustomCellTableViewCell.xib; sourceTree = "<group>"; };
-		CE7230641D26733500048571 /* HR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HR.png; sourceTree = "<group>"; };
 		CE7230661D267E8B00048571 /* HRPlc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HRPlc.png; sourceTree = "<group>"; };
-		CE7230681D26837900048571 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
-		CE72306A1D26845000048571 /* line1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line1.png; sourceTree = "<group>"; };
-		CE7313E91D1BEACD00C7116E /* HRPolicies.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HRPolicies.jpg; sourceTree = "<group>"; };
+		CE7309131D40A58E001CC5D7 /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting.png; sourceTree = "<group>"; };
 		CE7313EF1D1BF56A00C7116E /* ViewController_4s.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController_4s.xib; sourceTree = "<group>"; };
 		CE7313F11D1BF65600C7116E /* ViewController_5s.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController_5s.xib; sourceTree = "<group>"; };
 		CE74D1581D13E56400E0485D /* empApply.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empApply.png; sourceTree = "<group>"; };
@@ -253,34 +184,15 @@
 		CE74D1661D141E6300E0485D /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock.png; sourceTree = "<group>"; };
 		CE74D1681D141E6900E0485D /* user1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user1.png; sourceTree = "<group>"; };
 		CE74D16A1D141F3300E0485D /* user2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user2.png; sourceTree = "<group>"; };
-		CE74D16C1D14217A00E0485D /* emp1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emp1.png; sourceTree = "<group>"; };
 		CE762FAC1D2138EF00E99B00 /* ApprovedCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApprovedCellTableViewCell.h; sourceTree = "<group>"; };
 		CE762FAD1D2138F000E99B00 /* ApprovedCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApprovedCellTableViewCell.m; sourceTree = "<group>"; };
 		CE762FAE1D2138F000E99B00 /* ApprovedCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApprovedCellTableViewCell.xib; sourceTree = "<group>"; };
 		CE7C09671D13D158006228ED /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
-		CE7C09691D13D8C6006228ED /* availableLeaves2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = availableLeaves2.png; sourceTree = "<group>"; };
-		CE7C1E281D01A6AA0083A3E2 /* NMBottomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMBottomTabBar.h; sourceTree = "<group>"; };
-		CE7C1E291D01A6AA0083A3E2 /* NMBottomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMBottomTabBar.m; sourceTree = "<group>"; };
-		CE7C1E2A1D01A6AA0083A3E2 /* NMBottomTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMBottomTabBarController.h; sourceTree = "<group>"; };
-		CE7C1E2B1D01A6AA0083A3E2 /* NMBottomTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMBottomTabBarController.m; sourceTree = "<group>"; };
 		CE7E64381D1A74A100BD8BBB /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
 		CE8E38E31D25726C00467E89 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		CE99CC0D1CF853340058CB24 /* DashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
 		CE99CC0E1CF853340058CB24 /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
 		CE99CC0F1CF853340058CB24 /* DashboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardViewController.xib; sourceTree = "<group>"; };
-		CE99CC121CF85D770058CB24 /* LeavesHistory.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = LeavesHistory.jpeg; path = ../../../../Downloads/LeavesHistory.jpeg; sourceTree = "<group>"; };
-		CE99CC141CF85D8D0058CB24 /* request.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = request.jpeg; sourceTree = "<group>"; };
-		CE99CC161CF85E010058CB24 /* request1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = request1.jpeg; sourceTree = "<group>"; };
-		CE99CC181CF85E2C0058CB24 /* Apply.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Apply.jpeg; sourceTree = "<group>"; };
-		CE99CC1A1CF85E330058CB24 /* AvailableLeaves.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AvailableLeaves.jpeg; sourceTree = "<group>"; };
-		CE99CC1C1CF85EE00058CB24 /* holiday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = holiday.jpg; sourceTree = "<group>"; };
-		CE99CC1E1CF862490058CB24 /* Holiday.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Holiday.jpeg; sourceTree = "<group>"; };
-		CE9D6F671D09872A00604B47 /* AvailableLeaves1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AvailableLeaves1.png; sourceTree = "<group>"; };
-		CE9D6F691D09884C00604B47 /* holi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = holi.png; sourceTree = "<group>"; };
-		CE9D6F6A1D09884C00604B47 /* Holiday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Holiday.png; sourceTree = "<group>"; };
-		CE9D6F6D1D09891000604B47 /* Apply.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Apply.png; sourceTree = "<group>"; };
-		CE9D6F6F1D09898B00604B47 /* LeavesHistory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeavesHistory.png; sourceTree = "<group>"; };
-		CE9D6F711D0989FC00604B47 /* request1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = request1.png; sourceTree = "<group>"; };
 		CEA20D361CE47D7F002B3656 /* LeaveManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeaveManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA20D3A1CE47D7F002B3656 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CEA20D3C1CE47D7F002B3656 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -297,16 +209,10 @@
 		CEA20D6C1CE47E31002B3656 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CEA20D6D1CE47E31002B3656 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CEA20D6E1CE47E31002B3656 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
-		CEA5F67D1CEDD31E00048553 /* blue1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blue1.jpeg; sourceTree = "<group>"; };
-		CEA5F67F1CEDDB6C00048553 /* blue2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blue2.jpeg; sourceTree = "<group>"; };
 		CEA5F6811CEDDC9500048553 /* login2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = login2.jpeg; sourceTree = "<group>"; };
 		CEA5F6831CEDDDE900048553 /* smallButton.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smallButton.jpeg; sourceTree = "<group>"; };
 		CEA5F6851CEDDE5500048553 /* logout.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logout.jpeg; sourceTree = "<group>"; };
 		CEA5F6871CEDDEFF00048553 /* dropdown.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dropdown.jpeg; sourceTree = "<group>"; };
-		CEA5F68E1CEDDFA500048553 /* ugadhi.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ugadhi.jpeg; sourceTree = "<group>"; };
-		CEA5F6901CEDDFBB00048553 /* ramz.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ramz.jpeg; sourceTree = "<group>"; };
-		CEA5F6921CEDDFCE00048553 /* christ.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = christ.jpeg; sourceTree = "<group>"; };
-		CEA5F6941CEDE0FD00048553 /* ugadhi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ugadhi.jpg; sourceTree = "<group>"; };
 		CEA6D5111D2A909B005628DF /* AvailableLeavesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvailableLeavesViewController.h; sourceTree = "<group>"; };
 		CEA6D5121D2A909B005628DF /* AvailableLeavesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvailableLeavesViewController.m; sourceTree = "<group>"; };
 		CEA6D5131D2A909B005628DF /* AvailableLeavesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AvailableLeavesViewController.xib; sourceTree = "<group>"; };
@@ -381,7 +287,6 @@
 		CEF646621D1ACF8C00E4BF90 /* HRPoliciesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRPoliciesViewController.h; sourceTree = "<group>"; };
 		CEF646631D1ACF8C00E4BF90 /* HRPoliciesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRPoliciesViewController.m; sourceTree = "<group>"; };
 		CEF646641D1ACF8C00E4BF90 /* HRPoliciesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HRPoliciesViewController.xib; sourceTree = "<group>"; };
-		CEF646691D1ACFEA00E4BF90 /* policies.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = policies.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -421,65 +326,22 @@
 		CE705E391CFDBC05003243C0 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				CE7313E91D1BEACD00C7116E /* HRPolicies.jpg */,
+				CE7309131D40A58E001CC5D7 /* setting.png */,
 				CE7E64381D1A74A100BD8BBB /* close.png */,
 				CE00B8A41D1993F600476901 /* pic.jpg */,
 				CE6CFC841D181692009C8538 /* pts_logo.png */,
-				CE74D16C1D14217A00E0485D /* emp1.png */,
 				CE74D1681D141E6900E0485D /* user1.png */,
-				CE6CFC861D182081009C8538 /* year.png */,
 				CE74D16A1D141F3300E0485D /* user2.png */,
 				CE74D1661D141E6300E0485D /* lock.png */,
 				CE74D1641D141DDB00E0485D /* user.png */,
 				CE74D1621D141D0A00E0485D /* emp.png */,
 				CE74D1571D13E53000E0485D /* new Images */,
-				CE9D6F6D1D09891000604B47 /* Apply.png */,
-				CE65CB6B1D086E4F008E26AB /* holi.jpeg */,
-				CE9D6F711D0989FC00604B47 /* request1.png */,
-				CE9D6F6F1D09898B00604B47 /* LeavesHistory.png */,
-				CE7C09691D13D8C6006228ED /* availableLeaves2.png */,
-				CE7C09671D13D158006228ED /* background.png */,
-				CE65CB691D0853CA008E26AB /* launch.jpg */,
-				CE705E4E1CFDC10C003243C0 /* columbusday.jpg */,
-				CE705E461CFDC0D0003243C0 /* mothersday.jpg */,
-				CE705E541CFDC1A5003243C0 /* dayafter.jpg */,
-				CE705E561CFDC1BB003243C0 /* christmas.jpg */,
-				CE705E4C1CFDC0F7003243C0 /* independenceday.jpg */,
-				CE705E521CFDC175003243C0 /* thanksgiving.jpg */,
-				CE705E4A1CFDC0EC003243C0 /* fathersday.jpg */,
-				CE705E3E1CFDBFCC003243C0 /* valentines.jpeg */,
-				CE705E501CFDC120003243C0 /* laborday.jpg */,
-				CE65CB611D084827008E26AB /* banner2.jpg */,
-				CE65CB621D084827008E26AB /* banner3.jpeg */,
-				CE65CB631D084827008E26AB /* banner1.jpg */,
-				CE65CB641D084827008E26AB /* banner4.jpg */,
-				CE705E421CFDC089003243C0 /* goodfriday.jpeg */,
-				CE705E481CFDC0DD003243C0 /* memorialday.jpg */,
-				CE705E401CFDBFE9003243C0 /* presidents_day.jpg */,
-				CE705E441CFDC0C6003243C0 /* eastersunday.jpeg */,
-				CE705E3A1CFDBFB4003243C0 /* newyear.jpg */,
-				CE705E3C1CFDBFC3003243C0 /* mlk.jpg */,
-				CEA5F6831CEDDDE900048553 /* smallButton.jpeg */,
-				CE99CC161CF85E010058CB24 /* request1.jpeg */,
-				CEA5F68E1CEDDFA500048553 /* ugadhi.jpeg */,
-				CE9D6F671D09872A00604B47 /* AvailableLeaves1.png */,
-				CEA5F6901CEDDFBB00048553 /* ramz.jpeg */,
-				CEA5F6921CEDDFCE00048553 /* christ.jpeg */,
 				CEA5F6851CEDDE5500048553 /* logout.jpeg */,
 				CEA5F6811CEDDC9500048553 /* login2.jpeg */,
 				CEA5F6871CEDDEFF00048553 /* dropdown.jpeg */,
+				CEA5F6831CEDDDE900048553 /* smallButton.jpeg */,
 				CE676B731CE4CA5C00D7B516 /* arrow-left_red.png */,
-				CEA5F67D1CEDD31E00048553 /* blue1.jpeg */,
-				CE99CC141CF85D8D0058CB24 /* request.jpeg */,
-				CEA5F67F1CEDDB6C00048553 /* blue2.jpeg */,
-				CEA5F6941CEDE0FD00048553 /* ugadhi.jpg */,
-				CE99CC121CF85D770058CB24 /* LeavesHistory.jpeg */,
-				CE99CC1C1CF85EE00058CB24 /* holiday.jpg */,
-				CE9D6F691D09884C00604B47 /* holi.png */,
-				CE9D6F6A1D09884C00604B47 /* Holiday.png */,
-				CE99CC1E1CF862490058CB24 /* Holiday.jpeg */,
-				CE99CC181CF85E2C0058CB24 /* Apply.jpeg */,
-				CE99CC1A1CF85E330058CB24 /* AvailableLeaves.jpeg */,
+				CE7230661D267E8B00048571 /* HRPlc.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -487,6 +349,7 @@
 		CE74D1571D13E53000E0485D /* new Images */ = {
 			isa = PBXGroup;
 			children = (
+				CE7C09671D13D158006228ED /* background.png */,
 				CE74D1581D13E56400E0485D /* empApply.png */,
 				CE00B8981D19727700476901 /* empDetails.png */,
 				CE74D15E1D13E5B600E0485D /* empAvailable.png */,
@@ -495,17 +358,6 @@
 				CE74D15C1D13E59500E0485D /* managerview.png */,
 			);
 			name = "new Images";
-			sourceTree = "<group>";
-		};
-		CE7C1E2E1D01A6AD0083A3E2 /* tab */ = {
-			isa = PBXGroup;
-			children = (
-				CE7C1E281D01A6AA0083A3E2 /* NMBottomTabBar.h */,
-				CE7C1E291D01A6AA0083A3E2 /* NMBottomTabBar.m */,
-				CE7C1E2A1D01A6AA0083A3E2 /* NMBottomTabBarController.h */,
-				CE7C1E2B1D01A6AA0083A3E2 /* NMBottomTabBarController.m */,
-			);
-			name = tab;
 			sourceTree = "<group>";
 		};
 		CEA20D2D1CE47D7F002B3656 = {
@@ -543,7 +395,6 @@
 			children = (
 				CEF645C41D1AC0F100E4BF90 /* JSON */,
 				CEF645B01D1AC06700E4BF90 /* Calendar */,
-				CE7C1E2E1D01A6AD0083A3E2 /* tab */,
 				CE705E391CFDBC05003243C0 /* images */,
 				CEA20D3C1CE47D7F002B3656 /* AppDelegate.h */,
 				CEA20D3D1CE47D7F002B3656 /* AppDelegate.m */,
@@ -552,6 +403,9 @@
 				CEA20D6E1CE47E31002B3656 /* ViewController.xib */,
 				CE7313EF1D1BF56A00C7116E /* ViewController_4s.xib */,
 				CE7313F11D1BF65600C7116E /* ViewController_5s.xib */,
+				CE6917601D3E75C2000D9103 /* ChangePasswordsViewController.h */,
+				CE6917611D3E75C2000D9103 /* ChangePasswordsViewController.m */,
+				CE6917621D3E75C2000D9103 /* ChangePasswordsViewController.xib */,
 				CEA90BC91CE9AE4000AECA1A /* ApplyViewController.h */,
 				CEA90BCA1CE9AE4000AECA1A /* ApplyViewController.m */,
 				CEA90BCB1CE9AE4000AECA1A /* ApplyViewController.xib */,
@@ -594,11 +448,6 @@
 				CE36D4E91D0A86CC00AA1F88 /* ApprovalTableviewCell.h */,
 				CE36D4EA1D0A86CC00AA1F88 /* ApprovalTableviewCell.m */,
 				CE36D4EB1D0A86CC00AA1F88 /* ApprovalTableviewCell.xib */,
-				CE7230641D26733500048571 /* HR.png */,
-				CE72306A1D26845000048571 /* line1.png */,
-				CE7230681D26837900048571 /* line.png */,
-				CE7230661D267E8B00048571 /* HRPlc.png */,
-				CEF646691D1ACFEA00E4BF90 /* policies.pdf */,
 				CEF646621D1ACF8C00E4BF90 /* HRPoliciesViewController.h */,
 				CEF646631D1ACF8C00E4BF90 /* HRPoliciesViewController.m */,
 				CEF646641D1ACF8C00E4BF90 /* HRPoliciesViewController.xib */,
@@ -819,51 +668,25 @@
 			files = (
 				CE6CFC851D181692009C8538 /* pts_logo.png in Resources */,
 				CE74D15B1D13E57400E0485D /* empholiday.png in Resources */,
-				CE705E531CFDC175003243C0 /* thanksgiving.jpg in Resources */,
 				CEA5F6821CEDDC9500048553 /* login2.jpeg in Resources */,
-				CE705E571CFDC1BB003243C0 /* christmas.jpg in Resources */,
-				CE9D6F701D09898B00604B47 /* LeavesHistory.png in Resources */,
-				CE99CC151CF85D8D0058CB24 /* request.jpeg in Resources */,
 				CE00B8A51D1993F600476901 /* pic.jpg in Resources */,
-				CE7C096A1D13D8C6006228ED /* availableLeaves2.png in Resources */,
-				CE99CC171CF85E010058CB24 /* request1.jpeg in Resources */,
 				CE74D1591D13E56400E0485D /* empApply.png in Resources */,
-				CEA5F6801CEDDB6C00048553 /* blue2.jpeg in Resources */,
 				CEA5F6841CEDDDE900048553 /* smallButton.jpeg in Resources */,
 				CE74D1671D141E6300E0485D /* lock.png in Resources */,
-				CE705E511CFDC120003243C0 /* laborday.jpg in Resources */,
+				CE6917641D3E75C2000D9103 /* ChangePasswordsViewController.xib in Resources */,
 				CEA5F6861CEDDE5500048553 /* logout.jpeg in Resources */,
-				CE705E4B1CFDC0EC003243C0 /* fathersday.jpg in Resources */,
 				CE74D1651D141DDB00E0485D /* user.png in Resources */,
-				CE74D16D1D14217A00E0485D /* emp1.png in Resources */,
 				CEA20D491CE47D7F002B3656 /* LaunchScreen.storyboard in Resources */,
-				CE705E451CFDC0C6003243C0 /* eastersunday.jpeg in Resources */,
-				CE6CFC871D182081009C8538 /* year.png in Resources */,
 				CE7C09681D13D158006228ED /* background.png in Resources */,
-				CE705E491CFDC0DD003243C0 /* memorialday.jpg in Resources */,
-				CE705E471CFDC0D0003243C0 /* mothersday.jpg in Resources */,
-				CE705E551CFDC1A5003243C0 /* dayafter.jpg in Resources */,
-				CEA5F6911CEDDFBB00048553 /* ramz.jpeg in Resources */,
-				CE99CC131CF85D770058CB24 /* LeavesHistory.jpeg in Resources */,
 				CE7313F21D1BF65600C7116E /* ViewController_5s.xib in Resources */,
-				CE7230691D26837900048571 /* line.png in Resources */,
 				CE74D15F1D13E5B600E0485D /* empAvailable.png in Resources */,
-				CEA5F6931CEDDFCE00048553 /* christ.jpeg in Resources */,
 				CEA5F6881CEDDEFF00048553 /* dropdown.jpeg in Resources */,
-				CE9D6F6B1D09884C00604B47 /* holi.png in Resources */,
 				CEA90BCD1CE9AE4000AECA1A /* ApplyViewController.xib in Resources */,
 				CE74D1631D141D0B00E0485D /* emp.png in Resources */,
 				CE00B8A31D1989EB00476901 /* EmpDataViewController.xib in Resources */,
-				CE65CB6A1D0853CA008E26AB /* launch.jpg in Resources */,
 				CEA6D5151D2A909B005628DF /* AvailableLeavesViewController.xib in Resources */,
-				CE705E4D1CFDC0F7003243C0 /* independenceday.jpg in Resources */,
 				CE74D1611D13F5E900E0485D /* Lhistory.png in Resources */,
 				CEF0FEE51CEC716600E40CD2 /* HolidaysViewController.xib in Resources */,
-				CEA5F6951CEDE0FD00048553 /* ugadhi.jpg in Resources */,
-				CE99CC1F1CF862490058CB24 /* Holiday.jpeg in Resources */,
-				CE99CC191CF85E2C0058CB24 /* Apply.jpeg in Resources */,
-				CE705E3F1CFDBFCC003243C0 /* valentines.jpeg in Resources */,
-				CE99CC1B1CF85E330058CB24 /* AvailableLeaves.jpeg in Resources */,
 				CEF646661D1ACF8C00E4BF90 /* HRPoliciesViewController.xib in Resources */,
 				CEA20D701CE47E31002B3656 /* ViewController.xib in Resources */,
 				CE00B89E1D19731A00476901 /* EmpDetailsViewController.xib in Resources */,
@@ -871,42 +694,22 @@
 				CE7230671D267E8B00048571 /* HRPlc.png in Resources */,
 				CE698CA91CEF1F5C00E91BE7 /* ApprovalViewController.xib in Resources */,
 				CE4EC4731CEB72BD0008D731 /* ApplicationStatusViewController.xib in Resources */,
-				CE72306B1D26845000048571 /* line1.png in Resources */,
-				CE7230651D26733500048571 /* HR.png in Resources */,
-				CE65CB661D084827008E26AB /* banner3.jpeg in Resources */,
-				CE9D6F681D09872A00604B47 /* AvailableLeaves1.png in Resources */,
 				CE144A621D34E91F003CE6D1 /* ApprovedCellTableViewCell5.xib in Resources */,
 				CE676B741CE4CA5C00D7B516 /* arrow-left_red.png in Resources */,
-				CE9D6F6E1D09891000604B47 /* Apply.png in Resources */,
 				CE74D15D1D13E59500E0485D /* managerview.png in Resources */,
+				CE7309141D40A58E001CC5D7 /* setting.png in Resources */,
 				CE74D1691D141E6900E0485D /* user1.png in Resources */,
-				CE65CB6C1D086E50008E26AB /* holi.jpeg in Resources */,
-				CEA5F68F1CEDDFA500048553 /* ugadhi.jpeg in Resources */,
 				CE144A5B1D34CEFA003CE6D1 /* Launch Screen5.storyboard in Resources */,
-				CE99CC1D1CF85EE00058CB24 /* holiday.jpg in Resources */,
-				CEF6466A1D1ACFEA00E4BF90 /* policies.pdf in Resources */,
 				CE00B8991D19727700476901 /* empDetails.png in Resources */,
-				CE65CB681D084827008E26AB /* banner4.jpg in Resources */,
 				CE7313F01D1BF56A00C7116E /* ViewController_4s.xib in Resources */,
 				CE7E64391D1A74A100BD8BBB /* close.png in Resources */,
 				CE6CFC8C1D1821A1009C8538 /* YearHolidaysViewController.xib in Resources */,
-				CE65CB651D084827008E26AB /* banner2.jpg in Resources */,
-				CE705E3D1CFDBFC3003243C0 /* mlk.jpg in Resources */,
-				CEA5F67E1CEDD31E00048553 /* blue1.jpeg in Resources */,
 				CE99CC111CF853340058CB24 /* DashboardViewController.xib in Resources */,
-				CE705E3B1CFDBFB4003243C0 /* newyear.jpg in Resources */,
-				CE705E431CFDC089003243C0 /* goodfriday.jpeg in Resources */,
-				CE9D6F6C1D09884C00604B47 /* Holiday.png in Resources */,
-				CE9D6F721D0989FC00604B47 /* request1.png in Resources */,
 				CEA20D461CE47D7F002B3656 /* Assets.xcassets in Resources */,
-				CE705E4F1CFDC10C003243C0 /* columbusday.jpg in Resources */,
 				CE74D16B1D141F3300E0485D /* user2.png in Resources */,
 				CE762FB01D2138F000E99B00 /* ApprovedCellTableViewCell.xib in Resources */,
-				CE65CB671D084827008E26AB /* banner1.jpg in Resources */,
 				CE36D4ED1D0A86CC00AA1F88 /* ApprovalTableviewCell.xib in Resources */,
 				CE705E5C1CFDCA4E003243C0 /* HolidayCustomCellTableViewCell.xib in Resources */,
-				CE705E411CFDBFE9003243C0 /* presidents_day.jpg in Resources */,
-				CE7313EA1D1BEACD00C7116E /* HRPolicies.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -942,12 +745,12 @@
 				CEF645C31D1AC06700E4BF90 /* UILabel+CXCalendar.m in Sources */,
 				CEA90BCC1CE9AE4000AECA1A /* ApplyViewController.m in Sources */,
 				CEF646071D1AC0F100E4BF90 /* SBJsonUTF8Stream.m in Sources */,
-				CE7C1E2D1D01A6AA0083A3E2 /* NMBottomTabBarController.m in Sources */,
 				CEA90BD11CE9B69400AECA1A /* ApplyViewCustomCell.m in Sources */,
 				CEF645C21D1AC06700E4BF90 /* UIColor+CXCalendar.m in Sources */,
 				CEF646061D1AC0F100E4BF90 /* SBJsonTokeniser.m in Sources */,
 				CE144A611D34E91F003CE6D1 /* ApprovedCellTableViewCell5.m in Sources */,
 				CEF645F71D1AC0F100E4BF90 /* ASIDownloadCache.m in Sources */,
+				CE6917631D3E75C2000D9103 /* ChangePasswordsViewController.m in Sources */,
 				CEF645BE1D1AC06700E4BF90 /* CXCalendarCellView.m in Sources */,
 				CEF646081D1AC0F100E4BF90 /* SBJsonWriter.m in Sources */,
 				CEF645FC1D1AC0F100E4BF90 /* NSObject+SBJson.m in Sources */,
@@ -975,7 +778,6 @@
 				CEF645F61D1AC0F100E4BF90 /* ASIDataDecompressor.m in Sources */,
 				CE698CA81CEF1F5C00E91BE7 /* ApprovalViewController.m in Sources */,
 				CEF645FD1D1AC0F100E4BF90 /* Reachability.m in Sources */,
-				CE7C1E2C1D01A6AA0083A3E2 /* NMBottomTabBar.m in Sources */,
 				CEF645FE1D1AC0F100E4BF90 /* SBJsonParser.m in Sources */,
 				CEF645FF1D1AC0F100E4BF90 /* SBJsonStreamParser.m in Sources */,
 			);
@@ -1112,7 +914,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2";
 				INFOPLIST_FILE = LeaveManagement/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pyramidIndia.LeaveManagement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1128,7 +930,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2";
 				INFOPLIST_FILE = LeaveManagement/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pyramidIndia.LeaveManagement;
 				PRODUCT_NAME = "$(TARGET_NAME)";

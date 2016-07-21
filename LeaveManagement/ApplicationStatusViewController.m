@@ -38,8 +38,9 @@
     
     spinner = [[UIActivityIndicatorView alloc]
                initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    CGRect tabFrame=[UIScreen mainScreen].bounds;
     
-    spinner.center = CGPointMake(self.view.frame.size.width / 2.0, self.view.frame.size.height / 2.0);
+    spinner.center = CGPointMake(tabFrame.size.width / 2.0, tabFrame.size.height / 2.0);
 
     AppDelegate *appDelegate = (AppDelegate*) [UIApplication sharedApplication].delegate;
     NSLog(@"APPDELEGATE ACCESS %@",appDelegate.accessTokenString);
